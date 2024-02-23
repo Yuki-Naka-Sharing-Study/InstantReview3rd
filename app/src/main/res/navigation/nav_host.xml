@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/fragment_main">
+
+    <!-- 「fragment_main」から「fragment_ate」に画面遷移 -->
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.instant_review_third.MainFragment"
+        tools:layout="@layout/fragment_main"
+        android:label="fragment_first"
+        tools:ignore="DuplicateIds">
+        <action
+            android:id="@+id/action_mainFragment_to_ateFragment"
+            app:destination="@id/fragment_ate" />
+    </fragment>
+
+    <!-- 「fragment_main」から「fragment_want」に画面遷移 -->
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.instant_review_third.MainFragment"
+        tools:layout="@layout/fragment_main"
+        android:label="fragment_first"
+        tools:ignore="DuplicateIds">
+        <action
+            android:id="@+id/action_mainFragment_to_wantFragment"
+            app:destination="@id/fragment_want" />
+    </fragment>
+
+    <!-- 「fragment_ate」から「fragment_review_make」に画面遷移 -->
+    <fragment
+        android:id="@+id/fragment_ate"
+        android:name="com.example.instant_review_third.ui.AteFragment"
+        tools:layout="@layout/fragment_ate"
+        android:label="fragment_first">
+        <action
+            android:id="@+id/action_ateFragment_to_reviewMakeFragment"
+            app:destination="@id/fragment_review_make" />
+    </fragment>
+
+    <!-- 「fragment_want」から「fragment_want_memo」に画面遷移 -->
+    <fragment
+        android:id="@+id/fragment_want"
+        android:name="com.example.instant_review_third.ui.WantMemoFragment"
+        tools:layout="@layout/fragment_want"
+        android:label="fragment_first">
+        <action
+            android:id="@+id/action_wantFragment_to_wantMemoFragment"
+            app:destination="@id/fragment_want_memo" />
+    </fragment>
+
+    <!-- 「fragment_review_make」から「fragment_ate」に画面遷移 -->
+    <fragment
+        android:id="@+id/fragment_review_make"
+        android:name="com.example.instant_review_third.ui.AteFragment"
+        tools:layout="@layout/fragment_review_make"
+        android:label="fragment_first">
+        <action
+            android:id="@+id/action_reviewMakeFragment_to_ateFragment"
+            app:destination="@id/fragment_ate" />
+    </fragment>
+
+    <!-- 「fragment_want_memo」から「fragment_want」に画面遷移 -->
+    <fragment
+        android:id="@+id/fragment_want_memo"
+        android:name="com.example.instant_review_third.ui.WantFragment"
+        tools:layout="@layout/fragment_want_memo"
+        android:label="fragment_first">
+        <action
+            android:id="@+id/action_wantMemoFragment_to_wantFragment"
+            app:destination="@id/fragment_want" />
+    </fragment>
+
+
+</navigation>
