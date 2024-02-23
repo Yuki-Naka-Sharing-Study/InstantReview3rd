@@ -11,7 +11,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#d3d3d3">
+        android:background="#d3d3d3"
+        >
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar_review_make"
@@ -20,14 +21,16 @@
             android:background="@color/white"
             android:elevation="4dp"
             android:theme="?attr/actionBarTheme"
-            tools:ignore="MissingConstraints">
+            tools:ignore="MissingConstraints"
+            >
 
             <ImageButton
                 android:id="@+id/btn_close_review_make"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
-                android:layout_marginLeft="20dp" />
+                android:layout_marginLeft="20dp"
+                />
 
             <TextView
                 android:id="@+id/text_view_title_review_make"
@@ -36,7 +39,8 @@
                 android:layout_gravity="center"
                 android:text="レビュー作成"
                 android:textColor="@color/black"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                />
 
             <TextView
                 android:id="@+id/text_view_save_review_make"
@@ -74,7 +78,8 @@
             android:inputType="text"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_view_name_of_instant_review_make" />
+            app:layout_constraintTop_toBottomOf="@+id/text_view_name_of_instant_review_make"
+            />
 
         <ImageView
             android:id="@+id/image_view_review_make"
@@ -84,7 +89,8 @@
             android:layout_marginTop="20dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edit_text_name_of_instant_review_make" />
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_name_of_instant_review_make"
+            />
 
         <TextView
             android:id="@+id/text_view_review_review_make"
@@ -94,7 +100,8 @@
             android:layout_marginTop="264dp"
             android:text="レビュー"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edit_text_name_of_instant_review_make" />
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_name_of_instant_review_make"
+            />
 
         <EditText
             android:id="@+id/edit_text_review_review_make"
@@ -109,7 +116,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/image_view_review_make" />
+            app:layout_constraintTop_toBottomOf="@+id/image_view_review_make"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
